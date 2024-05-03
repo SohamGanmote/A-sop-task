@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	font-family: "EB Garamond", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	background-color: #fffef2;
+}
+
+button {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 30px;
+	min-width: 250px;
+	font-weight: 400;
+	font-size: 15px;
+	border: 1px solid black;
+	padding: 18px 28px;
+	transition: all 0.3s ease;
+}
+
+button:hover {
+	background-color: #333;
+	color: white;
+}
+
+button span {
+	font-family: "Suisse", sans-serif;
+}
+
+.btn-dark {
+	border: 1px solid white;
+	color: white;
+}
+
+.btn-dark:hover {
+	color: #333;
+	background-color: white;
+}
+
+.suisse {
+	font-family: "Suisse", sans-serif;
+}
+
+.suisseRegular {
+	font-family: "Suisse Regular", sans-serif;
+}
+
+.suisseMedium {
+	font-family: "Suisse Medium", sans-serif;
+}
+
+/* width */
+.horizontalScroll {
+	padding-bottom: 20px;
+}
+
+.horizontalScroll::-webkit-scrollbar {
+	height: 2px !important;
+}
+
+.horizontalScroll::-webkit-scrollbar-track {
+	width: 100px;
+	background: #f1f1f1;
+}
+
+.horizontalScroll::-webkit-scrollbar-thumb {
+	width: 1px;
+	background: #000000;
+}
+
+.scroll-btn {
+	width: fit-content !important;
+	color: white;
+	background-color: #333;
+	padding: 30px;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+	.scroll-btn {
+		padding: 10px;
+	}
+	.responsiveFlex {
+		flex-direction: column;
+	}
+}
+
+input {
+	background-color: transparent;
+	font-family: "Suisse", sans-serif;
+	border: 1px solid white;
+	padding: 5px 10px;
+}
