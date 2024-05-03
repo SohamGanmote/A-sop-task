@@ -5,7 +5,7 @@ import Hero3 from "./components/Hero3";
 import Navigater from "./components/Navigater";
 
 const Hero = () => {
-	const [hero, setHero] = useState(2);
+	const [hero, setHero] = useState(1);
 	const [play, setPlay] = useState(true);
 
 	const toggle = () => setPlay((prev) => !prev);
